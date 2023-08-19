@@ -59,7 +59,7 @@ class Span private constructor() {
     private var spannableCache: Spannable? = null
 
     private val Spannable?.isNotNullAndEmpty: Boolean
-        get() = this != null && this.isNotEmpty()
+        get() = !this.isNullOrEmpty()
 
     private fun runOnSelf(block: () -> Spannable?): Span = apply {
         block.invoke()?.let { spannableCache = it }
