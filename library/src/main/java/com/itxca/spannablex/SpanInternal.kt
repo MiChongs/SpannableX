@@ -42,6 +42,7 @@ import com.drake.spannable.span.CenterImageSpan
 import com.drake.spannable.span.GlideImageSpan
 import com.drake.spannable.span.MarginSpan
 import com.itxca.spannablex.annotation.TextStyle
+import com.itxca.spannablex.interfaces.OnSpanClickListener
 import com.itxca.spannablex.span.*
 import com.itxca.spannablex.span.LeadingMarginSpan
 import com.itxca.spannablex.span.legacy.LegacyBulletSpan
