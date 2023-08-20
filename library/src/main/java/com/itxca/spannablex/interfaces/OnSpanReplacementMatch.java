@@ -13,22 +13,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.itxca.spannablex.interfaces
 
-import android.view.View
+package com.itxca.spannablex.interfaces;
+
+import com.itxca.spannablex.ReplaceRule;
+
+import kotlin.jvm.functions.Function1;
+import kotlin.text.MatchResult;
+import kotlin.text.Regex;
 
 /**
- * [SimpleClickableSpan] 点击回调
- *
- *
- * [SpanInternal.spanClickable]
+ * 当 {@link ReplaceRule} 有匹配项时回调
+ * 详细说明: {@link com.drake.spannable.SpanUtilsKt#replaceSpan(CharSequence, Regex, Function1)}
  */
-interface OnSpanClickListener {
+public interface OnSpanReplacementMatch {
     /**
-     * [SimpleClickableSpan]被点击时回调
-     *
-     * @param v         点击的当前View
-     * @param matchText 点击时匹配上的文本
+     * @param result 当前 @{@link Regex} 匹配到的结果
      */
-    fun onClick(v: View?, matchText: String?)
+    void onMatch(MatchResult result);
 }

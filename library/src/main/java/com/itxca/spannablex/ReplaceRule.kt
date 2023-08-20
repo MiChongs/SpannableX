@@ -17,7 +17,6 @@
 package com.itxca.spannablex
 
 import androidx.annotation.Keep
-import com.itxca.spannablex.interfaces.OnSpanReplacementMatch
 
 /**
  * 替换规则
